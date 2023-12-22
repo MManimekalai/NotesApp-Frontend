@@ -1,0 +1,105 @@
+.home-container{
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height:100vh;
+    margin-top:100px ;
+    overflow: auto;
+    padding-bottom: 8%;
+    /* background-color: radial-gradient(90deg, rgba(246, 4, 226, 0.942) 25%, rgba(138,6,226,0.9921218487394958) 75%); */
+    /* background-image: url('../Assets/BG1.jpg'); */
+    background-image: radial-gradient( circle 763px at 18.3% 24.1%,  rgba(246, 4, 226, 0.942) 7.4%, rgba(148, 77, 196, 0.992)58.3% );
+}
+.searched-content{
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.searched-data{
+    margin:0% 2%;
+}
+.profile-container{
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.add-btn{
+    position: absolute;
+    right: 0;
+    margin-right: 25%;
+}
+.profile-titles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.card-btns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.profiles-cards{
+    box-shadow: 5px 5px 5px 5px;
+}
+.profiles-cards:hover{ 
+    border:4px solid rgb(245, 63, 7);
+    animation: animateCard 0.5s linear forwards; 
+}
+.input-box{
+    margin-top:4%;
+    width:70%;
+}
+.card-btn{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+@media only screen and (max-width: 900px){
+    .home-container{
+        margin-top:70px ;
+    }
+    .add-btn{
+        position: absolute;
+        right: 0;
+        margin-right: 5%;
+    }
+    .profile-titles{
+        padding-top: 10%;
+    }
+}
+@keyframes animateCard { 
+    0% { 
+        border-top-color: 1px solid rgb(245, 63, 7); 
+        border-right-color: transparent; 
+        border-bottom-color: transparent; 
+        border-left-color: transparent; 
+    } 
+ 
+    25% { 
+        border-top-color: 1px solid rgb(245, 63, 7); 
+        border-right-color: 1px solid rgb(245, 63, 7); 
+        border-bottom-color: transparent; 
+        border-left-color: transparent; 
+    } 
+    75% { 
+        border-top-color: 1px solid rgb(245, 63, 7); 
+        border-right-color: 1px solid rgb(245, 63, 7); 
+        border-bottom-color: 1px solid rgb(245, 63, 7); 
+        border-left-color: transparent; 
+    } 
+    100% { 
+        border-top-color: 1px solid rgb(245, 63, 7); 
+        border-right-color: 1px solid rgb(245, 63, 7); 
+        border-bottom-color:1px solid rgb(245, 63, 7); 
+        border-left-color: 1px solid rgb(245, 63, 7); 
+    } 
+}
